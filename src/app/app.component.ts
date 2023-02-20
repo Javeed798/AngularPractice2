@@ -30,4 +30,11 @@ export class AppComponent {
     {name:'Sharif', email:'Sharif@test.com'},
     {name:'dumbu', email:'dumbu@test.com'}
   ]
+
+  data1 = "X"
+
+  updateData(event:any){
+    console.log("hello"+event);
+    this.data1 = event
+  }
 }
