@@ -43,7 +43,6 @@
 
 
 <p>{{20 | usdToInr : 75}}</p>
--->
 
 <p>Tempalte Driven form</p>
 
@@ -53,6 +52,20 @@
     <br>
     <input type="password" ngModel name="password" placeholder="Enter Password">
     <br><br>
+    <button>Login</button>
+</form>
+-->
+
+<p>Reactice Form</p>
+
+<form [formGroup]="loginForm1" (ngSubmit)="loginUser()">
+    <input type="text" name="user" formControlName="user" placeholder="Enter Name">
+    <br><br>
+
+    <input type="password" name="password" formControlName="password" placeholder="Enter Password">
+
+    <br><br>
+
     <button>Login</button>
 </form>
 

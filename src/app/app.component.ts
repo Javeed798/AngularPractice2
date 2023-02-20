@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
-@Component({
+import { FormControl,FormGroup } from '@angular/forms';
+@Component({ 
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
@@ -19,6 +20,7 @@ export class AppComponent {
     this.list = this.list.filter(item => item.id !== id)
     console.log(this.list);
   }
+
 
   updateChild() {
     this.data = Math.floor(Math.random()*10);
@@ -46,6 +48,16 @@ export class AppComponent {
 
   userLogin(item:any){
     console.log(item);
+    
+  }
+
+  loginForm1 = new FormGroup({
+    user : new FormControl('username'),
+    password : new FormControl('123')
+  })
+
+  loginUser(){
+    console.log(this.loginForm1.value);
     
   }
 }
