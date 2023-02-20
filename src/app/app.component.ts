@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'AngularPractice2';
   list:any[] =[]
+  data=0;
 
   addTask(item:string){
     this.list.push({id:this.list.length,name: item})
@@ -17,6 +18,9 @@ export class AppComponent {
   remove(id:number){
     this.list = this.list.filter(item => item.id !== id)
     console.log(this.list);
-    
+  }
+
+  updateChild() {
+    this.data = Math.floor(Math.random()*10);
   }
 }
