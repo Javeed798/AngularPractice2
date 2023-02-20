@@ -38,4 +38,5 @@ export class AppComponent {
     console.log("hello"+event);
     this.data1 = event
   }
+  name1:any
 }

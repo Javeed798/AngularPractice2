@@ -7,6 +7,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { ChildComponent } from './child/child.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { Child1Component } from './child1/child1.component'
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { ChildComponent } from './child/child.component'
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatSliderModule
+    MatSliderModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
