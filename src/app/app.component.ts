@@ -43,4 +43,9 @@ export class AppComponent {
     name : "Javeed",
     age : 22
   }
+
+  userLogin(item:any){
+    console.log(item);
+    
+  }
 }
