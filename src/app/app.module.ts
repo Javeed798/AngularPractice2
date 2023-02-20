@@ -7,7 +7,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { ChildComponent } from './child/child.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { Child1Component } from './child1/child1.component'
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { UsdToInrPipe } from './pipes/usd-to-inr.pipe';
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import { ChildComponent } from './child/child.component'
     BrowserModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
