@@ -23,4 +23,19 @@ export class AppComponent {
   updateChild() {
     this.data = Math.floor(Math.random()*10);
   }
+
+
+  userDetails = [
+    {name:'Javeed', email:'javeed@test.com'},
+    {name:'Ninja', email:'Ninja@test.com'},
+    {name:'Sharif', email:'Sharif@test.com'},
+    {name:'dumbu', email:'dumbu@test.com'}
+  ]
+
+  data1 = "X"
+
+  updateData(event:any){
+    console.log("hello"+event);
+    this.data1 = event
+  }
 }

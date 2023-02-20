@@ -24,6 +24,17 @@
 
 <button (click)="updateChild()">Update Child</button>
 
+<ul *ngFor="let user of userDetails">
+    <app-user-details [item]="user">
+        
+    </app-user-details>
+</ul>
+-->
+{{data1}}
+
+<app-child1 (updateDataEvent)="updateData($event)" ></app-child1>
+
+
 
 
 
