@@ -14,8 +14,14 @@ import { UsdToInrPipe } from './pipes/usd-to-inr.pipe';
     AppComponent,
     ChildComponent,
     UserDetailsComponent,
-    Child1Component,
     UsdToInrPipe,
+    Child1Component
+
+import { ChildComponent } from './child/child.component'
+@NgModule({
+  declarations: [
+    AppComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
