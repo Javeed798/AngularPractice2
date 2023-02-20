@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { FormControl,FormGroup } from '@angular/forms';
+import { FormControl,FormGroup,Validators } from '@angular/forms';
 @Component({ 
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -52,12 +52,19 @@ export class AppComponent {
   }
 
   loginForm1 = new FormGroup({
-    user : new FormControl('username'),
-    password : new FormControl('123')
+    user : new FormControl('',[Validators.required,Validators.email]),
+    password : new FormControl('',[Validators.required,Validators.minLength(5)])
   })
 
   loginUser(){
     console.log(this.loginForm1.value);
-    
+  }
+
+  get user(){
+    return this.loginForm1.get('user')
+  }
+
+  get password(){
+    return this.loginForm1.get('password')
   }
 }
