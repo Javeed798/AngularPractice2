@@ -39,4 +39,9 @@ export class AppComponent {
     this.data1 = event
   }
   name1:any
+  today = Date()
+  users1={
+    name : "Javeed",
+    age : 22
+  }
 }

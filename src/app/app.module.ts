@@ -8,11 +8,13 @@ import { ChildComponent } from './child/child.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { Child1Component } from './child1/child1.component'
 import { FormsModule } from '@angular/forms';
+import { UsdToInrPipe } from './pipes/usd-to-inr.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
     UserDetailsComponent,
+    UsdToInrPipe,
     Child1Component
 
 import { ChildComponent } from './child/child.component'

@@ -32,13 +32,19 @@
 {{data1}}
 
 <app-child1 (updateDataEvent)="updateData($event)" ></app-child1>
--->
 
 <input type="text" name="text" id="name" [(ngModel)]="name1">
 <h1>{{name1}}</h1>
+-->
+
+<p>{{title | uppercase}}</p>
+
+<h1>{{today | date}}</h1>
+
+<p>{{users1 | json }}</p>
 
 
-
+<p>{{20 | usdToInr : 75}}</p>
 
 
 
