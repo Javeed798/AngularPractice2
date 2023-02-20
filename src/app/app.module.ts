@@ -13,6 +13,12 @@ import { Child1Component } from './child1/child1.component'
     ChildComponent,
     UserDetailsComponent,
     Child1Component
+
+import { ChildComponent } from './child/child.component'
+@NgModule({
+  declarations: [
+    AppComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
